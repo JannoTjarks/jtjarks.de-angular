@@ -1,11 +1,11 @@
 <div class="clearfix">
     <h3>Network Engineer/Software Engineer</h3>
     <hr>        
-    <img src="/assets/Foto_25-07-2020_20200726_space-cutted.jpg" alt="Mein Bild" style="max-width: 20%;" class="float-right pull-right ml-3 img-thumbnail">
+    <img src={{environmentVariables.personalImage}} alt="Mein Bild" style="max-width: 20%;" class="float-right pull-right ml-3 img-thumbnail">
     <p style="margin-right:1rem; font-size:92%; font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
         Name: Janno Tjarks<br />
         Geburtstag: 13.07.1998 ({{age}})<br />
-        E-Mail: janno.tjarks@mailbox.org<br />
+        E-Mail: {{environmentVariables.email}}<br />
     </p>        
     <hr>
     <h4>&Uuml;ber mich</h4>
@@ -43,15 +43,11 @@
 </div>
 <br />
 <h5>Weitere Links</h5>
-<div class="clearfix">
-    <img src="/assets/github-logo.png" style="max-width: 25px;" class="float-left mr-2">
-    <p>
-        <a href="https://github.com/JannoTjarks">GitHub</a>
-    </p>
-</div>
-<div class="clearfix">
-    <img src="/assets/xing-logo.png" style="max-width: 25px;" class="float-left mr-2 ">
-    <p>
-        <a href="https://www.xing.com/profile/Janno_Tjarks">Xing</a>
-    </p>
+<div *ngFor="let relatedLink of environmentVariables.relatedLinks">
+    <div class="clearfix">
+        <img src={{relatedLink.image}} style="max-width: 25px;" class="float-left mr-2">
+        <p>
+            <a href={{relatedLink.link}}>{{relatedLink.name}}</a>
+        </p>
+    </div>
 </div>

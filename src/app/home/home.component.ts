@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
+import { environment } from './../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import * as moment from 'moment';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  environmentVariables = environment;
   age: number;
   
   constructor() { }
