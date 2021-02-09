@@ -1,46 +1,44 @@
-<div class="clearfix">
-    <h3>Network Engineer/Software Engineer</h3>
-    <hr>        
-    <img src={{environmentVariables.personalImage}} alt="Mein Bild" style="max-width: 20%;" class="float-right pull-right ml-3 img-thumbnail">
-    <p style="margin-right:1rem; font-size:92%; font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
-        Name: Janno Tjarks<br />
-        Geburtstag: 13.07.1998 ({{age}})<br />
-        E-Mail: {{environmentVariables.email}}<br />
-    </p>        
-    <hr>
-    <h4>&Uuml;ber mich</h4>
-    <p>
-        Mein Name ist Janno Tjarks. Ich wurde am 13.07.1998 in Aurich im
-        Herzen Ostfrieslands geboren.
-    </p>
-    <p>
-        Nachdem ich mein Abitur im Jahr 2016 am Gymnasium Ulricianum in
-        Aurich abgeschlossen habe, begann ich ein Duales Studium im
-        Studienfach Wirtschaftsinformatik bei der ENERCON IT Service GmbH.
-    </p>
-    <p>
-        Die theoretischen Aspekte wurde an der Hochschule Emden/Leer
-        gelehrt.
-        <br />
-        Zeitgleich mit dem Studium fand eine Ausbildung zum Fachinformatiker
-        in der Fachrichtung Anwendungsentwicklung statt, die ich 2018 mit
-        Bestenehrung abgeschlossen habe.
-    </p>
-    <p>
-        Nach dem erfolgreichen Abschluss des Studiums im Sommer 2019
-        verblieb ich bei meinem Ausbildungsbetrieb und bin auch heute noch
-        als Network Engineer bei der ENERCON IT Service GmbH t&auml;tig.
-    </p>
-    <p>
-        In meiner Freizeit entwickle ich nach wie vor Software. Einiges
-        davon ist auf meiner <a href="https://github.com/JannoTjarks">
-            GitHub Seite
-        </a> einsehbar.
-    </p>
-    <p>
-        Ich wünsche Ihnen nun viel Spaß beim Durchstöbern meines Webauftrittes!
-    </p>
-</div>
+<h1>Network Engineer/Software Engineer</h1>
+<hr>        
+<img src={{environmentVariables.personalImage}} alt="Mein Bild" style="max-width: 20%;" class="float-right pull-right ml-3 img-thumbnail">
+<p style="margin-right:1rem; font-size:92%; font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;">
+    Name: Janno Tjarks<br />
+    Geburtstag: 13.07.1998 ({{age}})<br />
+    E-Mail: {{environmentVariables.email}}<br />
+</p>        
+<hr>
+<h2>&Uuml;ber mich</h2>
+<p>
+    Mein Name ist Janno Tjarks. Ich wurde am 13.07.1998 in Aurich im
+    Herzen Ostfrieslands geboren.
+</p>
+<p>
+    Nachdem ich mein Abitur im Jahr 2016 am Gymnasium Ulricianum in
+    Aurich abgeschlossen habe, begann ich ein Duales Studium im
+    Studienfach Wirtschaftsinformatik bei der ENERCON IT Service GmbH.
+</p>
+<p>
+    Die theoretischen Aspekte wurde an der Hochschule Emden/Leer
+    gelehrt.
+    <br />
+    Zeitgleich mit dem Studium fand eine Ausbildung zum Fachinformatiker
+    in der Fachrichtung Anwendungsentwicklung statt, die ich 2018 mit
+    Bestenehrung abgeschlossen habe.
+</p>
+<p>
+    Nach dem erfolgreichen Abschluss des Studiums im Sommer 2019
+    verblieb ich bei meinem Ausbildungsbetrieb und bin auch heute noch
+    als Network Engineer bei der ENERCON IT Service GmbH t&auml;tig.
+</p>
+<p>
+    In meiner Freizeit entwickle ich nach wie vor Software. Einiges
+    davon ist auf meiner <a href="https://github.com/JannoTjarks">
+        GitHub Seite
+    </a> einsehbar.
+</p>
+<p>
+    Ich wünsche Ihnen nun viel Spaß beim Durchstöbern meines Webauftrittes!
+</p>
 <br />
 <h5>Weitere Links</h5>
 <div *ngFor="let relatedLink of environmentVariables.relatedLinks">
