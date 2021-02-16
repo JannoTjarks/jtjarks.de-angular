@@ -2,10 +2,10 @@
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
             <a class="navbar-brand" routerLink="home">Janno Tjarks</a>
-            <button class="navbar-toggler d-lg-none" type="button" (click)="navbarOpen = !navbarOpen" [attr.aria-expanded]="!navbarOpen" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" (click)="navbarOpen = !navbarOpen" aria-expanded="!navbarOpen" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngbCollapse]="navbarOpen">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" [ngbCollapse]="!navbarOpen">
                 <ul class="navbar-nav flex-grow-1" routerLinkActive="active">
                     <li class="nav-item">
                         <a class="nav-link text-black" routerLink="home" routerLinkActive="active">Über mich</a>
